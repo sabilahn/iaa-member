@@ -1,0 +1,12 @@
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+/*
+|--------------------------------------------------------------------------
+| IAA External API Configuration (Template Example)
+|--------------------------------------------------------------------------
+| Copy this file to 'api.php' and set your actual API credentials.
+*/
+$config['iaa_api_url'] = getenv('IAA_API_URL') ?: 'https://api.dharma-iaa.com/ws/admin/';
+$config['iaa_secret_key'] = getenv('IAA_SECRET_KEY') ?: 'your_api_secret_key_here';
+

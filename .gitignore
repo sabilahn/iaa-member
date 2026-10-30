@@ -1,0 +1,96 @@
+# ==========================================
+# CodeIgniter 3 - Git Ignore Configuration
+# ==========================================
+
+# Sensitive Configs & Environment Files
+.env
+.env.*
+*.env
+application/config/database.php
+application/config/development/database.php
+application/config/testing/database.php
+application/config/production/database.php
+application/config/api.php
+application/config/development/api.php
+application/config/testing/api.php
+application/config/production/api.php
+
+# CodeIgniter Cache & Logs
+application/cache/*
+!application/cache/index.html
+!application/cache/.gitkeep
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.gitkeep
+
+# Captcha dynamic assets
+assets/images/captcha/*
+!assets/images/captcha/index.html
+!assets/images/captcha/.gitkeep
+
+# Server Logs & cPanel files
+error_log
+*/error_log
+*.log
+.well-known/
+cgi-bin/
+
+# Database Dumps, Backups & Temp files
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+*~
+*.swp
+
+# Dependencies
+/vendor/
+composer.phar
+
+# Secret Keys & Certificates
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor Files
+.idea/
+.vscode/
+/nbproject/
+*.sublime-project
+*.sublime-workspace
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# CodeIgniter Offline Documentation (~10MB)
+/user_guide/
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# Unit Test files
+/tests/tests/
+/tests/results/
